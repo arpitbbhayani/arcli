@@ -1,0 +1,46 @@
+{
+  "name": "arcli",
+  "version": "0.1.2",
+  "description": "Collection of awesome node packages wrapped in one to create a beautiful command line application.",
+  "main": "lib/arcli.min.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --env build",
+    "dev": "./node_modules/.bin/webpack --progress --colors --watch --env dev",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpitbbhayani/arcli.git"
+  },
+  "keywords": [
+  ],
+  "author": "Arpit Bhayani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arpitbbhayani/arcli/issues"
+  },
+  "homepage": "https://github.com/arpitbbhayani/arcli#readme",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "commander": "^2.11.0",
+    "node-emoji": "^1.8.1",
+    "ora": "^1.3.0",
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "webpack": "^3.6.0",
+    "webpack-node-externals": "^1.6.0",
+    "yargs": "^9.0.1"
+  }
+}
